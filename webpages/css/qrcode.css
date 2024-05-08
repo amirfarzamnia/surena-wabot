@@ -1,0 +1,87 @@
+body {
+    background-color: #161418;
+    color: #c4c3c3;
+    font-family: Century Gothic;
+}
+.container {
+    max-width: 300px;
+    margin: 5rem auto;
+    margin-top: 25px;
+    background: #161418;
+    box-shadow: 0 7px 20px 5px #00000088;
+    border-radius: 0.7rem;
+    transition: 0.5s all;
+}
+.container:hover {
+    box-shadow: 0 7px 50px 10px #000000aa;
+    transform: scale(1.015);
+}
+.container hr {
+    border: none;
+    border-bottom: 1.5px solid #aaaaaa55;
+}
+.container .main {
+    padding: 1rem;
+}
+.container .main #image {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s all;
+}
+.container .main #image:hover {
+    transform: scale(1.05);
+    border-radius: 1rem;
+}
+.container .main #description {
+    margin: 0;
+}
+.container .main .information {
+    display: flex;
+    justify-content: space-between;
+}
+.container .main .information a:link, a:visited {
+    color: #ee83e5;
+    cursor: help;
+    transition: 0.5s all;
+    text-decoration: none;
+}
+.container .main .information a:hover {
+    color: #fff;
+}
+.container .main button {
+    display: flex;
+    background-color: #24292e;
+    padding-top: 8px;
+    padding-left: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #00000088;
+    border: none;
+    transition: 0.5s all;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+}
+.container .main button:hover {
+    background-color: #1a1e23;
+    box-shadow: 2px 5px 8px #000000aa;
+}
+.container .main button hr {
+    margin-top: 16px;
+    width: 10%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.493);
+    transform: rotate(90deg);
+}
+.container .main button p {
+    color: #fff;
+    margin: 0;
+    padding-top: 6px;
+    padding-right: 25px;
+    font-size: 20px;
+}
+.container .main button #logo {
+    border-radius: 100%;
+    margin-top: 1.5px;
+    width: 1.9rem;
+    height: 1.9rem;
+}

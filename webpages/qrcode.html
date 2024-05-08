@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Surena QR</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Surena WhatsApp bot | QR Code scanner">
+	<meta name="keywords" content="WhatsApp bot, WhatsApp robot, Surena bot">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="amirfarzamnia">
+	<link rel="icon" type="image/png" sizes="64x64" href="images/surenalogo.png">
+	<link rel="stylesheet" href="css/qrcode.css">
+</head>
+
+<script src="javaScript/qrcode.js"></script>
+
+<body>
+	<div class="container">
+		<div class="main">
+			<a href="/qrcode" target="#blank">
+				<img id="image" src="/qrcode" onerror="changeDocument({ image: 'images/error.jpg', header1: 'QR not loaded', header2: ' ', description: 'Please try refreshing the page. If the issue persists, wait a few minutes before trying again.', bgColor: '#ED2939', clearInterval: true })"/>
+			</a>
+			<h2 id="header1">QR Generated</h2>
+			<p id="description">After scanning the QR code, your bot will be automatically activated on your WhatsApp account.</p>
+			<div class="information">
+				<a href="https://github.com/amirfarzamnia/surenawabot/wiki" target="#blank"><p>🕮 tutorial</p></a>
+				<p id="header2">Remaining time: 25s</p>
+			</div>
+			<hr>
+			<button onclick="window.open('https://github.com/amirfarzamnia/surenawabot')"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" id="logo"><hr><p>Surenabot GitHub</p></button>
+		</div>
+	</div>
+</body>
+</html>
